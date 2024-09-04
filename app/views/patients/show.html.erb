@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @patient %>
+
+<div>
+  <%if can? :update, @patient %>
+    <%= link_to "Edit this patient", edit_patient_path(@patient) %> |
+  <%end%>
+
+  <%= link_to "Back to patients", patients_path %>
+
+  <%if can? :delete, @patient %>
+    <%= button_to "Destroy this patient", @patient, method: :delete %>
+  <%end%>
+</div>
