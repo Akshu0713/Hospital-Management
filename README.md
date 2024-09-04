@@ -67,7 +67,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone "https://github.com/danielochuba/hospital_app.git"
+  git clone
 ```
 ### Install
 
